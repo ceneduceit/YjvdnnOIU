@@ -1,7 +1,6 @@
 module {
     @name:      "Atomic Types"
     @author:    "ATG (Ange Yaghi)"
-    @copyright: "Copyright 2022, Ange Yaghi"
 }
 
 // ========================================================
@@ -12,7 +11,6 @@ module {
 private node float_channel => __engine_sim__float { /* void */ }
 
 @doc: "String channel type"
-private node string_channel => __engine_sim__string { /* void */ }
 
 @doc: "Integer channel type"
 private node int_channel => __engine_sim__int { /* void */ }
@@ -51,9 +49,6 @@ public inline node bool {
 @doc: "String type"
 public inline node string {
     input s [::string_channel]: "";
-    alias output __out [::string_channel]: s;
-}
-
 // ========================================================
 //  Literals
 // ========================================================
